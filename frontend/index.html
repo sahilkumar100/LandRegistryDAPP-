@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Land Registry DApp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Land Registry</h1>
+    
+    <button id="connectButton" onclick="connectWallet()">Connect Wallet</button>
+    
+    <div id="walletStatus">Wallet Status: Not Connected</div>
+    <div id="connectedAccount"></div>
+
+    <hr>
+
+    <input type="text" id="landName" placeholder="Land Name">
+    <button id="registerBtn">Register Land</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script src="LandRegistry.json"></script>
+  <script src="app.js"></script>
+</body>
+</html>
